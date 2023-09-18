@@ -18,15 +18,15 @@
 </div>
 <div class="container">
     <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') { ?>
-        <form action="form.php" method="post">
+        <form action="index.php" method="post">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Имя пользователя</label>
-                <input type="text" class="form-control" name="first name" id="exampleFormControlInput1" value="<?php echo $_POST['first name'] ?? '' ?>"placeholder="Введите имя">
+                <input type="text" class="form-control" name="firstname" id="exampleFormControlInput1" value="<?php echo $_POST["firstname"] ?? '' ?>"placeholder="Введите имя">
             </div>
 
             <div class="mb-3">
                 <label for="exampleFormControlInput2" class="form-label">Электронный адрес</label>
-                <input type="text" class="form-control" name="lastname" id="exampleFormControlInput2" value="<?php echo $_POST['lastname'] ?? '' ?>" placeholder="Введите почту">
+                <input type="text" class="form-control" name="lastname" id="exampleFormControlInput2" value="<?php echo $_POST["lastname"] ?? '' ?>" placeholder="Введите почту">
             </div>
 
             <div class="mb-3">
