@@ -39,13 +39,11 @@
 </div>
 <div class="container">
     <?php
-    if (isset($_POST["first name"])){
-        $firstname = $_POST["first name"];
-        echo $firstname;
+    if (isset($_POST["firstname"])){
+        echo 'Имя пользователя: '.($_POST["firstname"]??'').'<br>';
     }
     if (isset($_POST["lastname"])){
-        $lastname = $_POST["lastname"];
-        echo $lastname;
+        echo 'Эл.адрес: '.($_POST["lastname"]??'');
     }
 
     ?>
@@ -53,4 +51,3 @@
 
 </body>
 </html>
-//не разобралась, как выводить данные из формы :(
